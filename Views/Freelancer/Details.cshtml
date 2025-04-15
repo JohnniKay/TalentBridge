@@ -1,0 +1,48 @@
+﻿@model ClientConnect.Models.Freelancer
+
+@{
+    @*
+    Summary:
+    Displays full details of a single freelancer.
+    Includes options to Edit, Delete, or return to the freelancer list.
+    *@
+
+    ViewData["Title"] = "Freelancer Details";
+}
+
+<h2>@Model.Name</h2>
+
+<div class="card p-4">
+    <!-- Show freelancer skills -->
+    <p><strong>Skills:</strong> @Model.Skills</p>
+
+    <!-- Show freelancer email -->
+    <p><strong>Email:</strong> @Model.Email</p>
+
+    <!-- Show freelancer Phone -->
+    <p><strong>Phone Number:</strong> @Model.PhoneNumber</p>
+
+    <!-- Show freelancer Experience Years -->
+    <p><strong>Years Of Experience:</strong> @Model.ExperienceYears</p>
+
+    <!-- Show freelancer Availability -->
+    <p>
+        <strong>Available:</strong>
+        @if (Model.IsAvailable)
+        {
+            <span class="badge bg-success">Yes</span>
+        }
+        else
+        {
+            <span class="badge bg-secondary">No</span>
+        }
+    </p>
+
+    <!-- Show freelancer Bio -->
+    <p><strong>Bio:</strong> @Model.Bio</p>
+
+    <!-- Navigation buttons -->
+    <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-primary">Edit</a>
+    <a asp-action="Delete" asp-route-id="@Model.Id" class="btn btn-danger">Delete</a>
+    <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+</div>

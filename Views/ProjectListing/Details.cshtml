@@ -1,0 +1,41 @@
+﻿@*
+    Summary:
+    View: Details.cshtml
+    Purpose: Displays full details of a single project listing to potential applicants or clients.
+    Model: ProjectListing — includes Title, Description, Budget, and ClientName.
+    Features:
+    - Styled with Bootstrap card layout
+    - Includes call-to-action button for freelancers to apply to the project
+    - Navigation link back to the list of project listings
+*@
+
+@model ClientConnect.Models.ProjectListing
+
+@{
+    ViewData["Title"] = "Project Details";
+}
+
+<h2 class="mb-4">Project Details</h2>
+
+<!-- Card to display the project information -->
+<div class="card shadow-sm">
+    <div class="card-body">
+        <!-- Project Title -->
+        <h4 class="card-title">@Model.Title</h4>
+
+        <!-- Project Description -->
+        <p class="card-text">@Model.Description</p>
+
+        <!-- Budget and Client Info -->
+        <p class="text-muted mb-1"><strong>Budget:</strong> @Model.Budget.ToString("C")</p>
+        <p class="text-muted"><strong>Client:</strong> @Model.ClientName</p>
+
+        <!-- Navigation buttons -->
+        <a asp-action="Index" class="btn btn-secondary">Back to Listings</a>
+
+        <!-- Apply to project button -->
+        <a asp-action="Create" asp-controller="Application" asp-route-projectId="@Model.Id" class="btn btn-primary">
+            Apply to this Project
+        </a>
+    </div>
+</div>

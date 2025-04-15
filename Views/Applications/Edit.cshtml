@@ -1,0 +1,74 @@
+@* 
+    <summary>
+    View for editing an existing Application. 
+    Allows updating the associated ProjectListing, Freelancer, CoverLetter, and submission timestamp.
+    Uses dropdowns for selecting the project and freelancer, with built-in validation and form styling.
+    </summary>
+*@
+
+@model ClientConnect.Models.Application
+
+@{
+    ViewData["Title"] = "Edit Application";
+}
+
+<h1>Edit Application</h1>
+
+<h4>Application</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            @* Displays validation errors for the entire model *@
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            @* Hidden field for the Application ID *@
+            <input type="hidden" asp-for="Id" />
+
+            @* Dropdown to select the associated project *@
+            <div class="form-group">
+                <label asp-for="ProjectListingId" class="control-label"></label>
+                <select asp-for="ProjectListingId" class="form-control" asp-items="ViewBag.ProjectListingId"></select>
+                <span asp-validation-for="ProjectListingId" class="text-danger"></span>
+            </div>
+
+            @* Dropdown to select the freelancer submitting the application *@
+            <div class="form-group">
+                <label asp-for="FreelancerId" class="control-label"></label>
+                <select asp-for="FreelancerId" class="form-control" asp-items="ViewBag.FreelancerId"></select>
+                <span asp-validation-for="FreelancerId" class="text-danger"></span>
+            </div>
+
+            @* Text input for editing the freelancer's cover letter *@
+            <div class="form-group">
+                <label asp-for="CoverLetter" class="control-label"></label>
+                <input asp-for="CoverLetter" class="form-control" />
+                <span asp-validation-for="CoverLetter" class="text-danger"></span>
+            </div>
+
+            @* Input for manually adjusting the submission date/time *@
+            <div class="form-group">
+                <label asp-for="SubmittedAt" class="control-label"></label>
+                <input asp-for="SubmittedAt" class="form-control" />
+                <span asp-validation-for="SubmittedAt" class="text-danger"></span>
+            </div>
+
+            @* Submit button to save the changes *@
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+@* Link to go back to the list of applications *@
+<div>
+    <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+</div>
+
+@section Scripts {
+    @* Renders the client-side validation scripts *@
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

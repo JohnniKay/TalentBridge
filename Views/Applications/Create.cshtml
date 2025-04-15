@@ -1,0 +1,73 @@
+@* 
+    <summary>
+    View for creating a new application for a project listing. 
+    Automatically selects the freelancer (hardcoded to ID 1 for now) and optionally preselects the project.
+    Displays a form where users can write a cover letter and submit the application.
+    </summary>
+*@
+
+@model ClientConnect.Models.Application
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Application</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            @* Conditionally render a preselected project or a dropdown list *@
+            @if (Model.ProjectListingId != 0)
+            {
+                <div class="form-group">
+                    <label class="control-label">Project</label>
+                    <p><strong>@ViewData["ProjectTitle"]</strong></p>
+                    <input type="hidden" asp-for="ProjectListingId" />
+                </div>
+            }
+            else
+            {
+                <div class="form-group">
+                    <label asp-for="ProjectListingId" class="control-label"></label>
+                    <select asp-for="ProjectListingId" class="form-control" asp-items="ViewBag.ProjectListingId"></select>
+                </div>
+            }
+
+            @* Freelancer is preselected; hardcoded as ID = 1 *@
+            <div class="form-group">
+                <label class="control-label">Freelancer</label>
+                <p><strong>@ViewBag.FreelancerEmail</strong></p>
+                <input type="hidden" asp-for="FreelancerId" value="1" />
+            </div>
+
+            @* Input field for the freelancer's cover letter *@
+            <div class="form-group">
+                <label asp-for="CoverLetter" class="control-label"></label>
+                <input asp-for="CoverLetter" class="form-control mt-2" />
+                <span asp-validation-for="CoverLetter" class="text-danger"></span>
+            </div>
+
+            @* No SubmittedAt field in the form — it's set server-side in the controller *@
+
+            <div class="form-group mt-2">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @* Include client-side validation scripts *@
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

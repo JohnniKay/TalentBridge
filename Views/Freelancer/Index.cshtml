@@ -1,0 +1,78 @@
+﻿@*
+    <summary>
+    Displays a list of all freelancers in the system.
+    Binds to IEnumerable<ClientConnect.Models.Freelancer>.
+    </summary>
+*@
+
+@model IEnumerable<ClientConnect.Models.Freelancer>
+
+@{
+    // Set the title for the view
+    ViewData["Title"] = "Freelancers";
+}
+
+<h1 class="mb-4">Freelancers</h1>
+
+<!-- Button to create a new freelancer -->
+<p>
+    <a asp-action="Create" class="btn btn-primary">Add New Freelancer</a>
+</p>
+
+<!-- Check if there are any freelancers to display -->
+@if (!Model.Any())
+{
+    <div class="alert alert-info">No freelancers available.</div>
+}
+else
+{
+    <!-- Table of freelancers -->
+    <table class="table table-bordered table-striped">
+        <thead class="thead-dark">
+            <tr>
+                <th>Name</th>
+                <th>Skills</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th style="width: 100px;">Yrs Exp</th>
+                <th>Available</th>
+                <th style="width: auto;">Bio</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td class="align-middle">@item.Name</td>
+                    <td class="align-middle">@item.Skills</td>
+                    <td class="align-middle">@item.Email</td>
+                    <td class="align-middle">@item.PhoneNumber</td>
+                    <td style="width: 100px; text-align: center;"
+                        class="align-middle">
+                        @item.ExperienceYears
+                    </td>
+                    <td style="text-align: center;" class="align-middle">
+                        @if (item.IsAvailable)
+                        {
+                            <span class="badge bg-success">Yes</span>
+                        }
+                        else
+                        {
+                            <span class="badge bg-secondary">No</span>
+                        }
+                    </td>
+                    <td style="width: 450px; white-space: normal;">@item.Bio</td>
+                    <td>
+                        <div class="d-flex flex-column gap-1">
+                            <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-primary btn-sm">Edit</a>
+                            <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-info btn-sm">Details</a>
+                            <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger btn-sm">Delete</a>
+                        </div>
+                    </td>
+                </tr>
+
+            }
+        </tbody>
+    </table>
+}

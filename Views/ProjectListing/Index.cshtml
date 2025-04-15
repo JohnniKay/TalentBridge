@@ -1,0 +1,56 @@
+﻿@*
+    Summary:
+    View: Index.cshtml
+    Purpose: Displays a list of all available project listings to users.
+    Model: IEnumerable<ProjectListing> - a collection of project listings to display.
+    Features:
+    - Responsive Bootstrap grid layout using card components
+    - Fallback message if no listings exist
+    - Action buttons for viewing, deleting, and applying to projects
+    - Link to create a new project
+*@
+@model IEnumerable<ClientConnect.Models.ProjectListing>
+
+@{
+    // Set the page title displayed in the browser tab
+    ViewData["Title"] = "Project Listings";
+}
+
+<h2 class="mb-4">Available Projects</h2>
+
+<!-- Button to navigate to Create view -->
+<a asp-action="Create" class="btn btn-success mb-4">+ Post New Project</a>
+
+<!-- If there are no project listings in the model, show a fallback message -->
+@if (!Model.Any())
+{
+    <p>No project listings available.</p>
+}
+else
+{
+    <!-- Display project listings in a responsive Bootstrap grid -->
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        @foreach (var project in Model)
+        {
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 d-flex flex-column p-3">
+                    <!-- Card content -->
+                    <div class="flex-grow-1">
+                        <h5 class="card-title">@project.Title</h5>
+                        <p class="card-text">@project.Description</p>
+                        <p><strong>Budget:</strong> @project.Budget.ToString("C")</p>
+                        <p><strong>Client:</strong> @project.ClientName</p>
+                    </div>
+
+                    <!-- Action buttons -->
+                    <div class="pt-3">
+                        <a asp-action="Details" asp-route-id="@project.Id" class="btn btn-outline-primary me-2">View Details</a>
+                        <a asp-action="Delete" asp-route-id="@project.Id" class="btn btn-outline-danger me-2">Delete</a>
+                        <a asp-controller="Applications" asp-action="Create" asp-route-projectId="@project.Id" class="btn btn-success"> Apply to this Project</a>
+
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+}

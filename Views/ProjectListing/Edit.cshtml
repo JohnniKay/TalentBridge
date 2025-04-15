@@ -1,0 +1,64 @@
+﻿@*
+    Summary:
+    View: Edit.cshtml
+    Purpose: Allows clients to edit an existing project listing.
+    Model: ProjectListing — includes editable properties like Title, Description, Budget, and ClientName.
+    Features:
+    - Bootstrap styling for consistent UI
+    - Validation using tag helpers and client-side script
+    - Hidden ID is passed automatically via model binding
+*@
+@model ClientConnect.Models.ProjectListing
+
+@{
+    ViewData["Title"] = "Edit Project Listing";
+}
+
+<h1>Edit Project</h1>
+
+<!-- Form to update the project listing -->
+<form asp-action="Edit" method="post">
+    <!-- Hidden field for the Project ID -->
+    <input type="hidden" asp-for="Id" />
+
+    <!-- Title field -->
+    <div class="form-group mb-3">
+        <label asp-for="Title" class="form-label fw-bold"></label>
+        <input asp-for="Title" class="form-control" />
+        <span asp-validation-for="Title" class="text-danger"></span>
+    </div>
+
+    <!-- Description field -->
+    <div class="form-group mb-3">
+        <label asp-for="Description" class="form-label fw-bold"></label>
+        <textarea asp-for="Description" class="form-control" rows="4"></textarea>
+        <span asp-validation-for="Description" class="text-danger"></span>
+    </div>
+
+    <!-- Budget field -->
+    <div class="form-group mb-3">
+        <label asp-for="Budget" class="form-label fw-bold"></label>
+        <input asp-for="Budget" class="form-control" type="number" />
+        <span asp-validation-for="Budget" class="text-danger"></span>
+    </div>
+
+    <!-- Client name field -->
+    <div class="form-group mb-3">
+        <label asp-for="ClientName" class="form-label fw-bold"></label>
+        <input asp-for="ClientName" class="form-control" />
+        <span asp-validation-for="ClientName" class="text-danger"></span>
+    </div>
+
+    <!-- Submit and cancel buttons -->
+    <div class="d-flex gap-2 mt-4">
+        <input type="submit" value="Save Changes" class="btn btn-primary" />
+        <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+    </div>
+</form>
+
+<!-- Client-side validation scripts -->
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

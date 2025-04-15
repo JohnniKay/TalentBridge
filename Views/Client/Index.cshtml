@@ -1,0 +1,56 @@
+﻿@*
+    <summary>
+    Displays a list of all clients in the system.
+    If no clients exist, a message is shown instead.
+    This page is used as the index view for the ClientsController.
+    </summary>
+*@
+
+@model IEnumerable<ClientConnect.Models.Client>
+
+@{
+    // Set the title of the page
+    ViewData["Title"] = "Clients";
+}
+
+<h1>Clients</h1>
+
+<!-- Button to navigate to the create client form -->
+@* <p>
+    <a asp-action="Create" class="btn btn-primary">Add New Client</a>
+</p> *@
+
+<!-- Show message if there are no clients -->
+@if (!Model.Any())
+{
+    <p class="text-muted">No clients found.</p>
+}
+else
+{
+    <!-- Display the list of clients in a table -->
+    <table class="table table-striped table-bordered">
+        <thead class="thead-light">
+            <tr>
+                <th>Name</th>
+                <th>Company</th>
+                <th>Email</th>
+                @* <th>Actions</th> *@
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var client in Model)
+            {
+                <tr>
+                    <td>@client.Name</td>
+                    <td>@client.Company</td>
+                    <td>@client.Email</td>
+                   @*  <td>
+                        <a asp-action="Edit" asp-route-id="@client.Id" class="btn btn-sm btn-warning">Edit</a>
+                        <a asp-action="Details" asp-route-id="@client.Id" class="btn btn-sm btn-info">Details</a>
+                        <a asp-action="Delete" asp-route-id="@client.Id" class="btn btn-sm btn-danger">Delete</a>
+                    </td> *@
+                </tr>
+            }
+        </tbody>
+    </table>
+}

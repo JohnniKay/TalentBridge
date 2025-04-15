@@ -1,0 +1,57 @@
+@* 
+    <summary>
+    View for listing all submitted applications.
+    Displays the Cover Letter, submission date, associated project (via ClientName), and freelancer's email.
+    Includes links to edit, view details, or delete each application.
+    </summary>
+*@
+
+@model IEnumerable<ClientConnect.Models.Application>
+
+@{
+    ViewData["Title"] = "Applications";
+}
+
+<h1>Applications</h1>
+
+@* Link to create a new application *@
+<p>
+    <a asp-action="Create" class="btn btn-primary">Create New</a>
+</p>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>@Html.DisplayNameFor(model => model.CoverLetter)</th>
+            <th>@Html.DisplayNameFor(model => model.SubmittedAt)</th>
+            <th>@Html.DisplayName("Project Listing")</th>
+            <th>@Html.DisplayName("Freelancer")</th>
+            <th></th> @* Actions column *@
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                @* Display cover letter snippet *@
+                <td>@Html.DisplayFor(modelItem => item.CoverLetter)</td>
+
+                @* Display submission timestamp *@
+                <td>@Html.DisplayFor(modelItem => item.SubmittedAt)</td>
+
+                @* Display the client name from the associated project listing, if available *@
+                <td>@(item.ProjectListing?.ClientName ?? "N/A")</td>
+
+                @* Display the freelancer’s email, if available *@
+                <td>@(item.Freelancer?.Email ?? "N/A")</td>
+
+                @* Action links for editing, viewing details, or deleting the application *@
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

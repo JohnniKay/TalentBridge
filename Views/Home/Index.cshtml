@@ -1,0 +1,46 @@
+﻿@{
+     @*
+    Summary:
+    Home Index View — Landing page for the ClientConnect platform.
+    - Displays a welcome message and a brief description of the platform's purpose.
+    - Provides navigation buttons to explore Freelancers, Clients, and Project Listings.
+    - Designed to be visually appealing and responsive using Bootstrap classes.
+     *@
+
+    ViewData["Title"] = "Welcome to ClientConnect";
+}
+
+<!-- Main landing container -->
+<div class="container mt-5">
+    <div class="text-center">
+
+        <!-- Headline -->
+        <h1 class="display-4 fw-bold">
+            Welcome to <span class="text-primary">ClientConnect</span>
+        </h1>
+
+        <!-- Platform description -->
+        <p class="lead mt-3 mb-4">
+            A simple, intuitive platform for connecting <strong>freelancers</strong> with <strong>clients</strong>.<br />
+            View profiles, post projects, and collaborate efficiently.
+        </p>
+
+        <!-- Navigation buttons to main sections -->
+        <div class="d-flex flex-wrap justify-content-center gap-3">
+            <!-- Link to Freelancer listing -->
+            <a asp-controller="Freelancer" asp-action="Index" class="btn btn-outline-primary btn-lg">
+                Explore Freelancers
+            </a>
+
+            <!-- Link to Client listing -->
+            <a asp-controller="Client" asp-action="Index" class="btn btn-outline-success btn-lg">
+                Browse Clients
+            </a>
+
+            <!-- Link to Project listing -->
+            <a asp-controller="ProjectListing" asp-action="Index" class="btn btn-outline-dark btn-lg">
+                View Projects
+            </a>
+        </div>
+    </div>
+</div>

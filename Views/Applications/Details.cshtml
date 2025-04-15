@@ -1,0 +1,59 @@
+@* 
+    <summary>
+    View for displaying detailed information about a specific Application.
+    Shows the cover letter, submission date, associated project (client name), 
+    and freelancer (email). Includes navigation to edit the application or return to the list.
+    </summary>
+*@
+
+@model ClientConnect.Models.Application
+
+@{
+    ViewData["Title"] = "Application Details";
+}
+
+<h1>Application Details</h1>
+
+<div>
+    <h4>Application</h4>
+    <hr />
+    <dl class="row">
+        @* Cover Letter submitted by the freelancer *@
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CoverLetter)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CoverLetter)
+        </dd>
+
+        @* Timestamp when the application was submitted *@
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SubmittedAt)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SubmittedAt)
+        </dd>
+
+        @* Project the freelancer applied to — shows client name if available *@
+        <dt class="col-sm-2">
+            Project
+        </dt>
+        <dd class="col-sm-10">
+            @(Model.ProjectListing != null ? Model.ProjectListing.Title + " (Client: " + Model.ProjectListing.ClientName + ")" : "N/A")
+        </dd>
+
+        @* Freelancer who submitted the application — shows email if available *@
+        <dt class="col-sm-2">
+            Freelancer
+        </dt>
+        <dd class="col-sm-10">
+            @(Model.Freelancer != null ? Model.Freelancer.Name + " (" + Model.Freelancer.Email + ")" : "N/A")
+        </dd>
+    </dl>
+</div>
+
+@* Navigation buttons for editing or returning to the application list *@
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.Id" class="btn btn-warning">Edit</a>
+    <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+</div>

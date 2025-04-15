@@ -1,0 +1,211 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\johnn\\Desktop\\Portfolio Projects\\ClientConnect\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6479D3FB-FE50-4E09-BA23-7B86E24ED144}|ClientConnect.csproj|c:\\users\\johnn\\desktop\\portfolio projects\\clientconnect\\views\\freelancer\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6479D3FB-FE50-4E09-BA23-7B86E24ED144}|ClientConnect.csproj|solutionrelative:views\\freelancer\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6479D3FB-FE50-4E09-BA23-7B86E24ED144}|ClientConnect.csproj|c:\\users\\johnn\\desktop\\portfolio projects\\clientconnect\\data\\seeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6479D3FB-FE50-4E09-BA23-7B86E24ED144}|ClientConnect.csproj|solutionrelative:data\\seeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6479D3FB-FE50-4E09-BA23-7B86E24ED144}|ClientConnect.csproj|c:\\users\\johnn\\desktop\\portfolio projects\\clientconnect\\views\\client\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6479D3FB-FE50-4E09-BA23-7B86E24ED144}|ClientConnect.csproj|solutionrelative:views\\client\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6479D3FB-FE50-4E09-BA23-7B86E24ED144}|ClientConnect.csproj|c:\\users\\johnn\\desktop\\portfolio projects\\clientconnect\\views\\client\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6479D3FB-FE50-4E09-BA23-7B86E24ED144}|ClientConnect.csproj|solutionrelative:views\\client\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6479D3FB-FE50-4E09-BA23-7B86E24ED144}|ClientConnect.csproj|c:\\users\\johnn\\desktop\\portfolio projects\\clientconnect\\views\\projectlisting\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6479D3FB-FE50-4E09-BA23-7B86E24ED144}|ClientConnect.csproj|solutionrelative:views\\projectlisting\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6479D3FB-FE50-4E09-BA23-7B86E24ED144}|ClientConnect.csproj|c:\\users\\johnn\\desktop\\portfolio projects\\clientconnect\\views\\freelancer\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6479D3FB-FE50-4E09-BA23-7B86E24ED144}|ClientConnect.csproj|solutionrelative:views\\freelancer\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6479D3FB-FE50-4E09-BA23-7B86E24ED144}|ClientConnect.csproj|c:\\users\\johnn\\desktop\\portfolio projects\\clientconnect\\views\\freelancer\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6479D3FB-FE50-4E09-BA23-7B86E24ED144}|ClientConnect.csproj|solutionrelative:views\\freelancer\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6479D3FB-FE50-4E09-BA23-7B86E24ED144}|ClientConnect.csproj|c:\\users\\johnn\\desktop\\portfolio projects\\clientconnect\\views\\freelancer\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6479D3FB-FE50-4E09-BA23-7B86E24ED144}|ClientConnect.csproj|solutionrelative:views\\freelancer\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6479D3FB-FE50-4E09-BA23-7B86E24ED144}|ClientConnect.csproj|c:\\users\\johnn\\desktop\\portfolio projects\\clientconnect\\views\\freelancer\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6479D3FB-FE50-4E09-BA23-7B86E24ED144}|ClientConnect.csproj|solutionrelative:views\\freelancer\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6479D3FB-FE50-4E09-BA23-7B86E24ED144}|ClientConnect.csproj|c:\\users\\johnn\\desktop\\portfolio projects\\clientconnect\\models\\freelancer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6479D3FB-FE50-4E09-BA23-7B86E24ED144}|ClientConnect.csproj|solutionrelative:models\\freelancer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6479D3FB-FE50-4E09-BA23-7B86E24ED144}|ClientConnect.csproj|c:\\users\\johnn\\desktop\\portfolio projects\\clientconnect\\controllers\\freelancercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6479D3FB-FE50-4E09-BA23-7B86E24ED144}|ClientConnect.csproj|solutionrelative:controllers\\freelancercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\johnn\\Desktop\\Portfolio Projects\\ClientConnect\\Views\\ProjectListing\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\ProjectListing\\Index.cshtml",
+              "ToolTip": "C:\\Users\\johnn\\Desktop\\Portfolio Projects\\ClientConnect\\Views\\ProjectListing\\Index.cshtml",
+              "RelativeToolTip": "Views\\ProjectListing\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADAAAACdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-15T21:45:14.786Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\johnn\\Desktop\\Portfolio Projects\\ClientConnect\\Views\\Client\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Client\\Create.cshtml",
+              "ToolTip": "C:\\Users\\johnn\\Desktop\\Portfolio Projects\\ClientConnect\\Views\\Client\\Create.cshtml",
+              "RelativeToolTip": "Views\\Client\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-15T21:39:06.376Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\johnn\\Desktop\\Portfolio Projects\\ClientConnect\\Views\\Client\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Client\\Index.cshtml",
+              "ToolTip": "C:\\Users\\johnn\\Desktop\\Portfolio Projects\\ClientConnect\\Views\\Client\\Index.cshtml",
+              "RelativeToolTip": "Views\\Client\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-15T21:38:07.652Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SeedData.cs",
+              "DocumentMoniker": "C:\\Users\\johnn\\Desktop\\Portfolio Projects\\ClientConnect\\Data\\SeedData.cs",
+              "RelativeDocumentMoniker": "Data\\SeedData.cs",
+              "ToolTip": "C:\\Users\\johnn\\Desktop\\Portfolio Projects\\ClientConnect\\Data\\SeedData.cs",
+              "RelativeToolTip": "Data\\SeedData.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACEAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-15T20:33:09.931Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\johnn\\Desktop\\Portfolio Projects\\ClientConnect\\Views\\Freelancer\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Freelancer\\Index.cshtml",
+              "ToolTip": "C:\\Users\\johnn\\Desktop\\Portfolio Projects\\ClientConnect\\Views\\Freelancer\\Index.cshtml",
+              "RelativeToolTip": "Views\\Freelancer\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD0AAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-15T20:15:53.594Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\johnn\\Desktop\\Portfolio Projects\\ClientConnect\\Views\\Freelancer\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Freelancer\\Create.cshtml",
+              "ToolTip": "C:\\Users\\johnn\\Desktop\\Portfolio Projects\\ClientConnect\\Views\\Freelancer\\Create.cshtml",
+              "RelativeToolTip": "Views\\Freelancer\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEYAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-15T20:12:02.45Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Freelancer.cs",
+              "DocumentMoniker": "C:\\Users\\johnn\\Desktop\\Portfolio Projects\\ClientConnect\\Models\\Freelancer.cs",
+              "RelativeDocumentMoniker": "Models\\Freelancer.cs",
+              "ToolTip": "C:\\Users\\johnn\\Desktop\\Portfolio Projects\\ClientConnect\\Models\\Freelancer.cs",
+              "RelativeToolTip": "Models\\Freelancer.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAswCoAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-15T20:08:02.122Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\johnn\\Desktop\\Portfolio Projects\\ClientConnect\\Views\\Freelancer\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Views\\Freelancer\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\johnn\\Desktop\\Portfolio Projects\\ClientConnect\\Views\\Freelancer\\Delete.cshtml",
+              "RelativeToolTip": "Views\\Freelancer\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-15T19:55:57.262Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\johnn\\Desktop\\Portfolio Projects\\ClientConnect\\Views\\Freelancer\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\Freelancer\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\johnn\\Desktop\\Portfolio Projects\\ClientConnect\\Views\\Freelancer\\Edit.cshtml",
+              "RelativeToolTip": "Views\\Freelancer\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEUAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-15T19:55:43.095Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\johnn\\Desktop\\Portfolio Projects\\ClientConnect\\Views\\Freelancer\\Details.cshtml",
+              "RelativeDocumentMoniker": "Views\\Freelancer\\Details.cshtml",
+              "ToolTip": "C:\\Users\\johnn\\Desktop\\Portfolio Projects\\ClientConnect\\Views\\Freelancer\\Details.cshtml",
+              "RelativeToolTip": "Views\\Freelancer\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-15T19:55:29.952Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "FreelancerController.cs",
+              "DocumentMoniker": "C:\\Users\\johnn\\Desktop\\Portfolio Projects\\ClientConnect\\Controllers\\FreelancerController.cs",
+              "RelativeDocumentMoniker": "Controllers\\FreelancerController.cs",
+              "ToolTip": "C:\\Users\\johnn\\Desktop\\Portfolio Projects\\ClientConnect\\Controllers\\FreelancerController.cs",
+              "RelativeToolTip": "Controllers\\FreelancerController.cs",
+              "ViewState": "AgIAADoAAAAAAAAAAAAcwBwAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-15T19:52:14.893Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

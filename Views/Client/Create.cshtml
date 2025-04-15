@@ -1,0 +1,48 @@
+﻿@*
+    <summary>
+    View for creating a new Client.
+    This form captures the client's Name, Company, and Email.
+    On submission, the form posts to the Create action in the ClientsController.
+    </summary>
+*@
+
+@model ClientConnect.Models.Client
+
+@{
+    // Set the title for the page
+    ViewData["Title"] = "Add Client";
+}
+
+<h1>Add Client</h1>
+
+<!-- Form for adding a new client -->
+<form asp-action="Create" method="post">
+    <div class="form-group">
+        <!-- Client Name input -->
+        <label asp-for="Name" class="control-label"></label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <!-- Company Name input -->
+        <label asp-for="Company" class="control-label"></label>
+        <input asp-for="Company" class="form-control" />
+        <span asp-validation-for="Company" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <!-- Email input -->
+        <label asp-for="Email" class="control-label"></label>
+        <input asp-for="Email" class="form-control" />
+        <span asp-validation-for="Email" class="text-danger"></span>
+    </div>
+
+    <!-- Submit button to add the new client -->
+    <button type="submit" class="btn btn-primary">Add Client</button>
+</form>
+
+<!-- Navigation link back to the clients list view -->
+<div class="mt-2">
+    <a asp-action="Index">Back to List</a>
+</div>

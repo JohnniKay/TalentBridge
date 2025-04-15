@@ -1,0 +1,38 @@
+﻿@model ClientConnect.Models.Freelancer
+
+@{
+    @*
+        Summary:
+        Displays a confirmation prompt for deleting a freelancer.
+        Includes warning message and freelancer info for review before deletion.
+    *@
+
+    ViewData["Title"] = "Delete Freelancer";
+}
+
+
+<h2>Confirm Delete</h2>
+
+<!-- Warning message before deletion -->
+<div class="alert alert-warning">
+    Are you sure you want to delete the freelancer <strong>@Model.Name</strong>?
+</div>
+
+<!-- Freelancer details to confirm identity -->
+<dl class="row">
+    <dt class="col-sm-2">Skills</dt>
+    <dd class="col-sm-10">@Model.Skills</dd>
+
+    <dt class="col-sm-2">Email</dt>
+    <dd class="col-sm-10">@Model.Email</dd>
+</dl>
+
+<!--
+    Form submits to POST DeleteConfirmed action.
+    Includes hidden field for ID to identify which record to delete.
+-->
+<form asp-action="Delete">
+    <input type="hidden" asp-for="Id" />
+    <button type="submit" class="btn btn-danger">Delete</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+</form>
