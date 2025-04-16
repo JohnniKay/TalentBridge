@@ -13,7 +13,7 @@ TalentBridge is a professional-grade mock B2B freelancer marketplace built with 
 
 ## Tech Stack
 
-Language: C#
+Language: C# + HTML
 
 Framework: ASP.NET Core MVC
 
@@ -33,23 +33,23 @@ This project simulates a real-world platform where clients and freelancers conne
 
 A quick look at the core functionality of **TalentBridge**:
 
-### 🏠 Home Page
+### Home Page
 Displays a welcoming overview and navigation to core features.
 ![Home Page](Images/HomePage.png)
 
-### 👥 Clients Page
+### Clients Page
 Browse registered clients.
 ![Clients Page](Images/Clients.png)
 
-### 💼 Available Projects
+### Available Projects
 Explore project listings submitted by clients and add new ones.
 ![Available Projects](Images/AvailableProjects.png)
 
-### 🧑‍💼 Add New Freelancer
+### Add New Freelancer
 Register a new freelancer to the platform.
 ![Add Freelancer](Images/AddFreelancer.png)
 
-### 👨‍💻 All Freelancers
+### All Freelancers
 View all freelancers and their details.
 ![All Freelancers](Images/FreeLancers.png)
 
